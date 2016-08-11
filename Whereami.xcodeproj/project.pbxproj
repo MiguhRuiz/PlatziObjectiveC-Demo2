@@ -15,6 +15,7 @@
 		11337F761D5C8A45001065F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11337F741D5C8A45001065F1 /* LaunchScreen.storyboard */; };
 		11337F811D5C8A45001065F1 /* WhereamiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11337F801D5C8A45001065F1 /* WhereamiTests.m */; };
 		11337F8C1D5C8A45001065F1 /* WhereamiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11337F8B1D5C8A45001065F1 /* WhereamiUITests.m */; };
+		11337F9A1D5C8B45001065F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11337F991D5C8B45001065F1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		11337F871D5C8A45001065F1 /* WhereamiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereamiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11337F8B1D5C8A45001065F1 /* WhereamiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiUITests.m; sourceTree = "<group>"; };
 		11337F8D1D5C8A45001065F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11337F991D5C8B45001065F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11337F9A1D5C8B45001065F1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		11337F5A1D5C8A45001065F1 = {
 			isa = PBXGroup;
 			children = (
+				11337F991D5C8B45001065F1 /* MapKit.framework */,
 				11337F651D5C8A45001065F1 /* Whereami */,
 				11337F7F1D5C8A45001065F1 /* WhereamiTests */,
 				11337F8A1D5C8A45001065F1 /* WhereamiUITests */,
@@ -207,6 +211,11 @@
 				TargetAttributes = {
 					11337F621D5C8A45001065F1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					11337F7B1D5C8A45001065F1 = {
 						CreatedOnToolsVersion = 7.3.1;
